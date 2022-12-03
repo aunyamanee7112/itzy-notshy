@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="style.css" />
+    <title>Itzy</title>
+    <link rel="shortcut icon" href="./img/apple-icon-180x180.png">
+  </head>
+  <body>
+    <div class="text">
+      <div class="VideoPromote">
+        <div class="Mvbox">
+          <div class="teaser1">
+            <div class="boxTest1"></div>
+            <video autoplay muted loop>
+              <source src="./img/teasure.mp4" type="video/mp4" />
+            </video>
+          </div>
+          <div class="teaser2" onmouseover="lightStick1()" onmouseout="lightStick2()">
+            <div class="teaser2Line">
+              <div style="max-width: 120px; max-height: 120px; width: 120px; height: 120px;">
+                <img src="./img/20-4.png" id="img"  width="120px" />
+              </div>
+              <div style="text-align: center">
+                <p style="font-size: 15px; padding-bottom: 5px">
+                  있지 공식 응원링
+                </p>
+                <p
+                  style="
+                    padding: 10px 5px 0 5px;
+                    text-transform: uppercase;
+                    font-size: 15px;
+                  "
+                >
+                  Itzy Official LightStick
+                </p>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="textPromote">
+        <div class="mv">
+          <div class="textMV">
+            <p class="line">
+              <div class="lineX"></div>
+            </p>
+            <div class="notshy">
+              <img
+                src="./img/logo_png___itzy___not_shy_logo_png_by_kloorer_de2ndem.png"
+                width="200px"
+              />
+              <p class="animate__bounceIn">OUT NOW!</p>
+            </div>
+          </div>
+        </div>
+        <div class="textandLine">
+          <span class="textbox1">
+            <p>ITZY</p>
+            <p>K-pop artist</p>
+            <p>jyp Entertainment</p>
+          </span>
+          <div class="Line"></div>
+          <span class="textbox3">
+            <p>Seoul, South Korea</p>
+            <p>February 12, 2019 Debut</p>
+            <p style="font-size: 13px">2019-present</p>
+          </span>
+        </div>
+        <span class="button">
+          <button id="button" onclick="btn()">Watch now</button>
+        </span>
+        <div class="textandLine">
+          <span class="textbox1">
+            <p>DALLA DALLA</p>
+            <p style="font-size: 13px">M Countdown Debut Stage</p>
+            <p style="font-size: 13px">Yeji Lia Ryujin Chaeryeong Yuna</p>
+          </span>
+          <div class="Line"></div>
+          <span class="textbox3">
+            <p>Digital Single</p>
+            <p style="font-size: 15px">
+              dalla dalla wannabe<br />icy notchy
+            </p>
+          </span>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="textRun">
+        <div class="textLeft">
+          <marquee behavior="alternate" scrollamount="20" direction="left"> ITZY MIDZY JYP ITZY MIDZY JYP ITZY MIDZY JYP</marquee>
+        </div>
+        <div  class="textRight">
+          <marquee behavior="alternate" scrollamount="20" direction="right">DALLA DALLA ICY CHERRY WANNABE NOTCHY</marquee>
+        </div>
+      </div>
+      <div class="videoBackgroud">
+        <video autoplay muted loop>
+          <source src="./img/notshy.mp4" type="video/mp4" />
+        </video>
+      </div>
+    </div>
+
+    <script>
+      var img = document.getElementById('img');
+      var btnNeon = document.getElementById("button");
+      function btn() {
+        window.open("https://www.youtube.com/channel/UCDhM2k2Cua-JdobAh5moMFg");
+      }
+      function lightStick1(){
+        img.src = "./img/122.png"
+      }
+      function lightStick2(){
+        img.src = "./img/20-4.png"
+      }
+    </script>
+
+  </body>
+</html>
